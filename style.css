@@ -1,0 +1,69 @@
+.card {
+  width: 327px;
+  height: 478px;
+  border: 1px solid;
+}
+
+.media {
+  height: 202px;
+  background-color: bisque;
+}
+
+.content {
+  padding: 20px;
+}
+/* .color-secondary {
+  color: gray;
+} */
+:root {
+  --primary:black;
+  --secondary:gray;
+}
+.title-secondary {
+  /* margin: 20 20px; */
+color:var(--secondary)
+}
+/* } */
+
+.title-primary {
+  /* margin: 20px; */
+  font-size: 24px;
+}
+
+ .card-desc { 
+
+  /* margin: 20px; */
+  color:var(--secondary)
+ }
+
+ .tags {
+  border:2px solid purple;
+  /* display: flex; */
+  /* justify-content: space-between; */
+ }
+ /* 用兄弟选择器，除了第一个孩子之外的其他孩子 */
+ .horizontal-space >*+* {
+  margin-top: 15px;
+ }
+
+ .vertical-space >*+* {
+  margin-top: 25px
+ }
+ /* .tag2 {
+  margin-left: 15px;
+ }
+ .tag3 {
+  margin-left: 15px;
+ /* } */
+ /* .margin-horizontal {
+  margin-left: 15px;
+ } */ 
+
+ .centralize-content {
+  display: flex;
+  justify-content: center;
+ }
+
+ .tag::before {
+  content:''
+ }
